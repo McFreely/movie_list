@@ -1,0 +1,3 @@
+ # The Awesome list
+
+This is a To-do web app, for movies, tv shows, books, ...
