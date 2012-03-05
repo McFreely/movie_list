@@ -14,7 +14,7 @@ group :test do
   gem 'spork', '0.9.0.rc8'
 end
 
-
+gem "zurb-foundation", :group => :assets
 
 # Gems used only for assets and not required
 # in production environments by default.
