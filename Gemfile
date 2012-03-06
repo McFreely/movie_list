@@ -11,8 +11,12 @@ end
 group :test do
   gem "rspec-rails"
   gem "webrat", '0.7.1'
-
   gem 'spork', '0.9.0.rc8'
+end
+
+group :production do
+  #gems specifically for heroku go here
+  gem 'pg'
 end
 
 gem "zurb-foundation", :group => :assets
