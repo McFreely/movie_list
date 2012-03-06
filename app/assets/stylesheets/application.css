@@ -12,6 +12,20 @@
  *= require foundation
  *= require_tree .
 */
+header .row {
+	margin-bottom: 50px;
+}
+.logo {
+	color: #74D9EF;
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	font-weight: bold;
+	text-shadow: -3px 3px 0 #001C22;
+}
+
+.logo:hover {
+	color: #15C7EF;
+}
 
 nav{
   margin:0;
@@ -33,8 +47,6 @@ nav a{
 	display: block;
 	width: 125px;
 }
-
-
 
 footer {
 

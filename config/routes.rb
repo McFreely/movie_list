@@ -6,6 +6,8 @@ AwesomeList::Application.routes.draw do
   
   root :to => 'pages#home'
   
+  match'Welcome',  :to => 'users#new', :as => :user_root
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

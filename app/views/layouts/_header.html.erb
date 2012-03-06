@@ -1,13 +1,17 @@
 <header class="row">
 	<div class="seven columns">
-		<% logo = image_tag("logo.png", :alt => "The Awesome List") %>
-		<%= link_to logo, root_path %>
+		<% if user_signed_in? %>
+			<%= link_to "The Awesome List", user_root_path, 
+												:class => "logo" %>
+		<% else %>
+			<%= link_to "The Awesome List", root_path, :class => "logo"%>
+		<% end %>
 	</div>
 	
 	<div class="five columns">
 		<nav>
 			<% if user_signed_in? %>
-				<%= current_user.email %>
+				<a><%= current_user.email %></a>
 				<%= link_to "Sign out", destroy_user_session_path, 
 													:method => :delete %>
 			<% else %>
