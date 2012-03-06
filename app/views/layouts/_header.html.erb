@@ -1,0 +1,23 @@
+<header class="row">
+	<div class="seven columns">
+		<% logo = image_tag("logo.png", :alt => "The Awesome List") %>
+		<%= link_to logo, root_path %>
+	</div>
+	
+	<div class="five columns">
+		<nav>
+			<% if user_signed_in? %>
+				<%= current_user.email %>
+				<%= link_to "Sign out", destroy_user_session_path, 
+													:method => :delete %>
+			<% else %>
+				<ul>
+					<li><%= link_to "Sign In", new_user_session_path %></li>
+					<li>|</li>
+					<li><%= link_to "Register", 
+										new_user_registration_path %></li>
+				</ul>
+			<% end %>
+		</nav>
+	</div>
+</header>

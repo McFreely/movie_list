@@ -35,8 +35,12 @@ nav a{
 }
 
 footer {
+
   margin-top: 200px;
   padding:0;
+}
+footer ul {
+	float: right;
 }
 
 footer li {
