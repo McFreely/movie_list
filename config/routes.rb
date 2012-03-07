@@ -1,12 +1,19 @@
 AwesomeList::Application.routes.draw do
+  
+  authenticated :user do 
+    root :to => 'users#new'
+  end 
+  
+  root :to => 'pages#home'
+  
   devise_for :users
 
   match 'contact', :to => 'pages#contact'
   match 'about',   :to => 'pages#about'
   
-  root :to => 'pages#home'
   
-  match'Welcome',  :to => 'users#new', :as => :user_root
+  
+  
   
 
   # The priority is based upon order of creation:
