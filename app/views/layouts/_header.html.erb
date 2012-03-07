@@ -6,13 +6,15 @@
 	<div class="five columns">
 		<nav>
 			<% if user_signed_in? %>
-				<a><%= current_user.username %></a>
-				<%= link_to "Sign out", destroy_user_session_path, 
-													:method => :delete %>
+				<ul>
+					<li><a><%= current_user.username %></a></li>
+					<li id="pipe">|</li>
+					<li><%= link_to "Sign out", destroy_user_session_path, 
+												:method => :delete %></li>
 			<% else %>
 				<ul>
 					<li><%= link_to "Sign In", new_user_session_path %></li>
-					<li>|</li>
+					<li id="pipe">|</li>
 					<li><%= link_to "Register", 
 										new_user_registration_path %></li>
 				</ul>

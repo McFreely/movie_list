@@ -12,6 +12,18 @@
  *= require foundation
  *= require_tree .
 */
+
+/* summary 
+*1. Header
+*2. Sign up button
+*3. Search Form
+*4. Movie Lists
+*5. Footer 
+*/
+
+
+/*   ---  Header styling   */
+
 header .row {
 	margin-bottom: 50px;
 }
@@ -30,7 +42,6 @@ header .row {
 nav{
   margin:0;
   padding:0;
-  text-align:center;
   float: right;
 }
 nav li{
@@ -41,6 +52,29 @@ nav a{
   padding:10px;
 }
 
+#pipe {
+	color: #6a6a6a;
+}
+
+
+/* --- Search Form --- */
+#search {
+	text-align: center; 
+	font-family: 'Oswald', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#search h2 {
+	font-weight: 500;
+}
+
+/* --- Movie List --- */
+ #list h3 {
+	font-family: 'Oswald', sans-serif;
+}
+
+/* ---  sign up button ---*/
+
 #signbtn {
 	margin-left: auto;
 	margin-right: auto;
@@ -48,6 +82,8 @@ nav a{
 	width: 125px;
 }
 
+
+/* --- footer styling ---*/ 
 footer {
 
   margin-top: 200px;
