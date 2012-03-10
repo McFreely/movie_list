@@ -1,12 +1,18 @@
 AwesomeList::Application.routes.draw do
   
+  
+
   authenticated :user do 
-    root :to => 'users#new'
+    root :to => 'users#show'
   end 
   
   root :to => 'pages#home'
   
-  devise_for :users
+  devise_for :users do
+    resources :items
+  end
+  
+  match 'users/:current_user/items/:id/complete' => "items#complete", :as => :complete_item
 
   match 'contact', :to => 'pages#contact'
   match 'about',   :to => 'pages#about'

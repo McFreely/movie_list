@@ -1,0 +1,38 @@
+<section class="row">
+	<div id="search" class="eight columns offset-by-two">
+		<h2>Add a movie right now !</h2>
+		<%= form_for [@user, @item] do |form| %>
+		<p><%= form.text_field :title %> <%= form.submit %></p>
+		<% end %>
+	</div>
+</section>
+
+<section id="list" class="row">
+	<div class="eight columns">
+		<h3>Your magnificent list :</h3>
+		<ul>
+			<% current_user.items.incomplete.each do |item| %>
+			<li>
+				<%= item.title %> |
+			 	<%= link_to "delete", item, :method => :delete, :title => 
+															item.title %>  |
+				<%= link_to "Watched !", complete_item_path(current_user,
+															item.id) %>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	
+	<div class="four columns">
+		<h3>You've already watched :</h3>
+		<ul>
+			<% current_user.items.completed.each do |item| %>
+			<li>
+				<%= item.title %> | 
+				<%= link_to "delete", item,	:method => :delete,
+											:title => item.title %>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+</section>
