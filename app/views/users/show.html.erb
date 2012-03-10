@@ -2,35 +2,37 @@
 	<div id="search" class="eight columns offset-by-two">
 		<h2>Add a movie right now !</h2>
 		<%= form_for [@user, @item] do |form| %>
-		<p><%= form.text_field :title %> <%= form.submit %></p>
+		<p><%= form.text_field :title %> <%= form.submit :Add, :class => "button green small", :id => "add_btn" %></p>
 		<% end %>
 	</div>
 </section>
 
 <section id="list" class="row">
-	<div class="eight columns">
+	<div class="six columns">
 		<h3>Your magnificent list :</h3>
-		<ul>
+		<ul id="list_to_do">
 			<% current_user.items.incomplete.each do |item| %>
 			<li>
-				<%= item.title %> |
-			 	<%= link_to "delete", item, :method => :delete, :title => 
-															item.title %>  |
+				<p><%= item.title %></p>
 				<%= link_to "Watched !", complete_item_path(current_user,
-															item.id) %>
+															item.id),
+											:class => "watch_btn" %>
+			 	<%= link_to "delete", item, :method => :delete,  
+											:class => "delete_link" %>  
 			</li>
 			<% end %>
 		</ul>
 	</div>
 	
-	<div class="four columns">
-		<h3>You've already watched :</h3>
-		<ul>
+	<div class="four columns offset-by-two">
+		<h3>Done !</h3>
+		<ul id="list_done">
 			<% current_user.items.completed.each do |item| %>
 			<li>
-				<%= item.title %> | 
+				<p><%= item.title %></p>
 				<%= link_to "delete", item,	:method => :delete,
-											:title => item.title %>
+											:title => item.title,
+											:class => "delete_link_done" %>
 			</li>
 			<% end %>
 		</ul>
