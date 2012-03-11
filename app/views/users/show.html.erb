@@ -14,11 +14,13 @@
 			<% current_user.items.incomplete.each do |item| %>
 			<li>
 				<p><%= item.title %></p>
-				<%= link_to "Watched !", complete_item_path(current_user,
-															item.id),
-											:class => "watch_btn" %>
-			 	<%= link_to "delete", item, :method => :delete,  
-											:class => "delete_link" %>  
+				<% watched = image_tag("watched.png", :alt => "Watched !", 
+											:class => "watched_button")%>
+				<%= link_to watched, complete_item_path(current_user,
+															item.id)%>
+				<% delete = image_tag("delete.png", :alt => "Delete", 
+												:class => "delete_button")%>
+			 	<%= link_to delete, item, :method => :delete %>  
 			</li>
 			<% end %>
 		</ul>
@@ -30,9 +32,10 @@
 			<% current_user.items.completed.each do |item| %>
 			<li>
 				<p><%= item.title %></p>
-				<%= link_to "delete", item,	:method => :delete,
-											:title => item.title,
-											:class => "delete_link_done" %>
+				<% delete = image_tag("delete.png", :alt => "Delete", 
+											:class => "delete_button_done")%>
+				<%= link_to delete, item,	:method => :delete,
+											:title => item.title %>
 			</li>
 			<% end %>
 		</ul>

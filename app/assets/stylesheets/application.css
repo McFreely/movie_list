@@ -85,6 +85,9 @@ nav a{
 }
 
 /* --- Movie List --- */
+@font-face { font-family: 'IconicFill'; src: url('assets/iconic_fill.otf') format('opentype'); }
+
+.check {content:'\2713';}
 
 #list_to_do li {
 	background-color: #68b6e8;
@@ -100,20 +103,37 @@ nav a{
 #list_to_do a:hover {
 	color: #689ae8;
 }
-.delete_link {
+.delete_button {
 	float: right;
-	margin-right: 15px;
-	font-size: 12px;
+	margin-right: 20px;
+	padding-top: 4px;
 	color: #2A9ADF;
+	height: 13px;
+	opacity: 0.4;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
 }
-.watch_btn {
+.watched_button {
 	float: right;
 	margin-right: 10px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #1D84C3;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
 }
 
+.watched_button:hover, .watched_button:focus {
+	opacity: 1;
+}
+.delete_button:hover, .delete_button:focus {
+	opacity : 1;
+}
 
 #list_done li {
 	background-color: #68b6e8;
@@ -129,11 +149,19 @@ nav a{
 #list_done a:hover {
 	color: #689ae8;
 }
-.delete_link_done {
+.delete_button_done {
 	float: right;
-	margin-right: 5px;
-	font-size: 12px;
-	color: #2A9ADF;
+	margin-right: 10px;
+	margin-top: 4px;
+	height: 13px;
+	opacity: 0.4;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+.delete_button_done:hover, .delete_button_done:focus {
+	opacity: 1;
 }
 
 
