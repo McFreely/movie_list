@@ -15,14 +15,3 @@
 //= require foundation
 //= require_tree .
 
-$(function() {
-	$('.delete_item').bind('ajax:success', function() {
-		$(this).closest('li').fadeOut();
-	});
-	$('.watched_item').bind('ajax:success', function() {
-		$(this).closest('li').fadeOut();
-	});
-	
-});
-
-

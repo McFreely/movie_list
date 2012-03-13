@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
     @item.save
       
     respond_to do |format|
-      format.html { redirect_to(root_path) }
+      format.html 
       format.js
     end
   end
@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
     
     respond_to do |format|
       format.html { redirect_to(root_path) }
-      format.js   { render :nothing => true }
+      format.js   
     end
     
   end
@@ -30,7 +30,7 @@ class ItemsController < ApplicationController
     
     respond_to do |format|
       format.html { redirect_to(root_path) }
-      format.js   { render :nothing => true }
+      format.js   
     end
   end
 end
