@@ -100,11 +100,11 @@
 	.nice.large.button 		{ background-position: 0 -30px; }
 
 	/* Colors ---------- */
-	.blue.button			{ background-color: #E36B23; }
+	.blue.button			{ background-color: #CBEE95; color: #373b3f; }
 	.red.button				{ background-color: #e91c21; }
 	.white.button			{ background-color: #e9e9e9; color: #333; }
 	.black.button			{ background-color: #141414; }
-	.green.button			{ background-color: #68b6e8; }
+	.green.button			{ background-color: #68b6e8; color: #373b3f; }
 	
 	/* Nice Colors ---------- */
 	.nice.blue.button		{ border: 1px solid #0593dc; }
@@ -114,8 +114,8 @@
 	.nice.green.button		{ border: 1px solid #4a6b2d; }
 	
 	/* Hovers ---------- */
-	.button:hover, .button:focus 				{ background-color: #FFC154; color: #fff; }
-	.blue.button:hover, .blue.button:focus		{ background-color: #FFC154; }
+	.button:hover, .button:focus 				{ background-color: #DCF4B8; color: #373b3f; }
+	.blue.button:hover, .blue.button:focus		{ background-color: #DCF4B8; }
 	.red.button:hover, .red.button:focus 		{ background-color: #d01217; }
 	.white.button:hover, .white.button:focus	{ background-color: #dadada; color: #333; }
 	.black.button:hover, .black.button:focus	{ background-color: #000; }
