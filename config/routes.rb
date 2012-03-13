@@ -1,7 +1,4 @@
 AwesomeList::Application.routes.draw do
-  
-  
-
   authenticated :user do 
     root :to => 'users#show'
   end 

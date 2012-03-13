@@ -1,43 +1,28 @@
 <section class="row">
 	<div id="search" class="eight columns offset-by-two">
 		<h2>Add a movie right now !</h2>
-		<%= form_for [@user, @item] do |form| %>
-		<p><%= form.text_field :title %> <%= form.submit :Add, :class => "button green small", :id => "add_btn" %></p>
+		<%= form_for [@user, @item], :remote => true, 
+						:id => "create_item_form" do |form| %>
+		<p>
+			<%= form.text_field :title %> 
+			<%= form.submit :Add, 
+				:class => "button green small", 
+				:id => "add_btn" %>
+		</p>
 		<% end %>
 	</div>
 </section>
 
 <section id="list" class="row">
-	<div class="six columns">
+	<div class="six columns" id="list">
 		<h3>Your magnificent list :</h3>
-		<ul id="list_to_do">
-			<% current_user.items.incomplete.each do |item| %>
-			<li>
-				<p><%= item.title %></p>
-				<% watched = image_tag("watched.png", :alt => "Watched !", 
-											:class => "watched_button")%>
-				<%= link_to watched, complete_item_path(current_user,
-															item.id)%>
-				<% delete = image_tag("delete.png", :alt => "Delete", 
-												:class => "delete_button")%>
-			 	<%= link_to delete, item, :method => :delete %>  
-			</li>
-			<% end %>
-		</ul>
+		
+			<%= render @item %>
+		
 	</div>
 	
 	<div class="four columns offset-by-two">
 		<h3>Done !</h3>
-		<ul id="list_done">
-			<% current_user.items.completed.each do |item| %>
-			<li>
-				<p><%= item.title %></p>
-				<% delete = image_tag("delete.png", :alt => "Delete", 
-											:class => "delete_button_done")%>
-				<%= link_to delete, item,	:method => :delete,
-											:title => item.title %>
-			</li>
-			<% end %>
-		</ul>
+		<%= render 'items/list_done'%>
 	</div>
 </section>

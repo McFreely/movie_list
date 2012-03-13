@@ -4,6 +4,8 @@ gem 'rails', '3.2.1'
 gem 'sqlite3'
 gem 'devise'
 gem 'newrelic_rpm'
+gem 'uglifier', '>= 1.0.3'
+gem 'coffee-rails', '~> 3.2.1'
 
 group :development do
   gem "rspec-rails"
@@ -26,11 +28,11 @@ gem "zurb-foundation", :group => :assets
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  
 
   # gem 'therubyracer'
 
-  gem 'uglifier', '>= 1.0.3'
+ 
 end
 
 gem 'jquery-rails'

@@ -1,14 +1,14 @@
 class ItemsController < ApplicationController
   attr_accessor :completed
-  respond_to :html, :xml, :js
+  respond_to :html, :xml, :json
   
   def create 
     @item = current_user.items.new(params[:item])
-    if @item.save
-      redirect_to root_path
-    else
-      flash[:error] = "Could not add item to the list"
-      redirect_to root_path
+    @item.save
+      
+    respond_to do |format|
+      format.html { redirect_to(root_path) }
+      format.js
     end
   end
   
@@ -16,12 +16,21 @@ class ItemsController < ApplicationController
     @item = current_user.items.find(params[:id])
     @item.completed = true
     @item.save
-    redirect_to root_path
+    
+    respond_to do |format|
+      format.html { redirect_to(root_path) }
+      format.js   { render :nothing => true }
+    end
+    
   end
   
   def destroy
     @item = current_user.items.find(params[:id])
     @item.destroy
-    redirect_to root_path
+    
+    respond_to do |format|
+      format.html { redirect_to(root_path) }
+      format.js   { render :nothing => true }
+    end
   end
 end

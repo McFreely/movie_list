@@ -1,0 +1,21 @@
+<ul id="list_to_do">
+<% current_user.items.incomplete.each do |item| %>
+<li>
+		<p><%= item.title %></p>
+		<% watched = image_tag("watched.png", :alt => "Watched !", 
+									:class => "watched_button")%>
+		<%= link_to watched, complete_item_path(current_user,
+														item.id),
+										:remote => true,
+										:update => '#list_done', 
+										:class => 'watched_item'%>
+
+		<% delete = image_tag("delete.png", :alt => "Delete", 
+										:class => "delete_button")%>
+
+		<%= link_to delete, item, :method => :delete, 
+								  :remote => true, 
+								  :class => 'delete_item' %>  
+</li>
+<% end %>
+</ul>
