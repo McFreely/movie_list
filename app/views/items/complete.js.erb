@@ -4,6 +4,9 @@ $('.watched_item').bind('ajax:success', function() {
 
 $('<%= escape_javascript(render(:partial => 'items/list_done'))%>')
   .replaceAll('#list_done')
+
+$('#list_done li:first')
   .hide()
-  .fadeIn(600)
+  .delay(500)
+  .fadeIn()
 

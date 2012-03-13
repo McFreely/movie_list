@@ -1,6 +1,8 @@
 $('<%= escape_javascript(render(:partial => 'item'))%>')
   .replaceAll('#list_to_do');
 
-$('#item_title')
-	.find('input')
-	.val('');
+$('#list_to_do li:first')
+  .hide()
+  .fadeIn()
+
+

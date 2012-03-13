@@ -4,7 +4,7 @@
 		<%= form_for [@user, @item], :remote => true, 
 						:id => "create_item_form" do |form| %>
 		<p>
-			<%= form.text_field :title %> 
+			<%= form.text_field :title%> 
 			<%= form.submit :Add, 
 				:class => "button green small", 
 				:id => "add_btn" %>
