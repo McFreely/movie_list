@@ -1,28 +1,17 @@
 <section class="row">
-	<div id="search" class="eight columns offset-by-two">
-		<h2>Add a movie right now !</h2>
-		<%= form_for [@user, @item], :remote => true, 
-						:id => "create_item_form" do |form| %>
-		<p>
-			<%= form.text_field :title%> 
-			<%= form.submit :Add, 
-				:class => "button green small", 
-				:id => "add_btn" %>
-		</p>
-		<% end %>
-	</div>
-</section>
-
-<section id="list" class="row">
-	<div class="six columns" id="list">
-		<h3>Your magnificent list :</h3>
-		
-			<%= render @item %>
-		
-	</div>
+	<h3>Your brilliant profile</h3>
 	
-	<div class="four columns offset-by-two">
-		<h3>Done !</h3>
-		<%= render 'items/list_done'%>
-	</div>
+	
+	<ul>
+		<li>Number of movies to watch : 
+		<%= current_user.items.incomplete.count %></li>
+		<li>Number of movies you've seen: 
+			<%= current_user.items.completed.count %></li>
+		<li>Points of cool obtained : 
+			<%= ((current_user.items.count)*0.7).ceil %> </li>
+	</ul>
+	
+	<h5><%= link_to "Edit your profile", edit_user_registration_path, 
+								:class => "button radius tiny blue"  %></h5>
+	
 </section>

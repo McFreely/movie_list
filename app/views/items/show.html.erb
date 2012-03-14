@@ -1,0 +1,28 @@
+<section class="row">
+	<div id="search" class="eight columns offset-by-two">
+		<h2>Add a movie right now !</h2>
+		<%= form_for [@user, @item], :remote => true, 
+						:id => "create_item_form" do |form| %>
+		<p>
+			<%= form.text_field :title%> 
+			<%= form.submit :Add, 
+				:class => "button green small", 
+				:id => "add_btn" %>
+		</p>
+		<% end %>
+	</div>
+</section>
+
+<section id="list" class="row">
+	<div class="six columns" id="list">
+		<h3>Your magnificent list :</h3>
+		
+			<%= render @item %>
+		
+	</div>
+	
+	<div class="four columns offset-by-two">
+		<h3>Done !</h3>
+		<%= render 'items/list_done'%>
+	</div>
+</section>

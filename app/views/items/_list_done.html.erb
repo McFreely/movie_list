@@ -2,12 +2,6 @@
 	<% current_user.items.completed.each do |item| %>
 	<li>
 		<p><%= item.title %></p>
-		<% delete = image_tag("delete.png", :alt => "Delete", 
-									:class => "delete_button_done")%>
-		<%= link_to delete, item,	:method => :delete,
-									:title => item.title,
-									:remote => true, 
-									:class => 'delete_item' %>
 	</li>
 	<% end %>
 </ul>

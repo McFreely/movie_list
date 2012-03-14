@@ -2,6 +2,11 @@ class ItemsController < ApplicationController
   attr_accessor :completed
   respond_to :html, :xml, :json
   
+  def show 
+    @items = current_user.items.all
+    @item = current_user.items.new
+  end
+  
   def create 
     @item = current_user.items.new(params[:item])
     @item.save

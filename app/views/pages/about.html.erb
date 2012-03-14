@@ -1,4 +1,56 @@
-<h1>About us (or, more accuratly, me)</h1>
-<p>
-	TO DO funny description of myself
-</p>
+<section class="row">
+	<h2>About us (or, more accuratly, me)</h2>
+</section>
+<section class="row about_page">
+		<div class="four columns">
+			<h3>The guy behind this</h3>
+			<p>
+				Since you probably don't care about me that much, i'll be
+		 		brief. <br />
+		 		I'm Paul, 21, and I live in France. I don't have any
+		 		moustache, but i smoke and love bread. <br /> 
+				I love programming and 
+				I don't watch enough movies, which was the motivation behind
+				all of this.
+		    </p>
+		</div>
+	
+		<div class="four columns ">
+			<h3>The Project</h3>
+			<p>
+				If I had been given a banana each time a friend told me "you
+				 haven't seen *insert here a famous movie* ?",  I could have
+				 raised a monkey army! <br />
+				 Something needed to be done about it.
+				 (Losing friends wasn't an option.)
+		    </p>
+		</div>
+		
+		<div class="four columns ">
+			<h3>The Ambition</h3>
+			<p>
+				At the moment, this is just an little "to-watch" app for
+				movies. I have a list as long as a porno actor's dick of
+				things that I want to implement. <br />
+				 You can check the 
+				<%= link_to "blog", '#'%> for informations on future
+				 additions, ramblings about stuff, and maybe french
+				 electro playlists if I have time. <br />
+				Thank you for reading all of this, you're a good person !
+		    </p>
+		</div>
+</section>
+<section class="row about_page">
+	<div class="four columns offset-by-four">
+		<h3>Listen to this !</h3>
+		<p>
+			The development of this website was achieve listening only to this
+			 album : <br /><br />
+			<% album_art = image_tag('album_art.jpg', 
+								:alt => 'brigitte cober cd') %>
+			<%= link_to album_art, 'spotify:user:isidore76:playlist:5KAShcztrbzNdhVH7rvBZi'
+			%>
+			
+	    </p>
+	</div>
+</section>

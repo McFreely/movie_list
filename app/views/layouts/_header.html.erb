@@ -8,7 +8,7 @@
 			<% if user_signed_in? %>
 				<ul>
 					<li><%= link_to current_user.username, 
-											edit_user_registration_path %></li>
+											profile_path %></li>
 					<li id="pipe">|</li>
 					<li><%= link_to "Sign out", destroy_user_session_path, 
 												:method => :delete %></li>
