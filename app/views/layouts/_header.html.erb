@@ -1,6 +1,8 @@
 <header class="row">
 	<div class="seven columns">
-		<%= link_to "Awesome List", root_path, :class => "logo"%>
+		<% logo = image_tag("logo.png", :alt => 'Awesome List', 
+										:id => "logo")%>
+		<%= link_to logo, root_path%>
 	</div>
 	
 	<div class="five columns">

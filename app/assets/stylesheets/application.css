@@ -24,19 +24,8 @@
 
 /*   ---  Header styling   */
 
-header .row {
+#logo {
 	margin-bottom: 50px;
-}
-.logo {
-	color: #68b6e8;
-	font-family: 'Oswald', sans-serif;
-	font-size: 48px;
-	font-weight: bold;
-	text-shadow: -3px 3px 0 #001C22;
-}
-
-.logo:hover {
-	color: #DCF4F9;
 }
 
 nav{
@@ -57,12 +46,30 @@ nav a{
 }
 
 
+/* --- Home Page --- */
+
+.image_home {
+	border: 5px solid #727B83;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	width: 128px;
+}
+
+#image_home_front {
+
+
+
+}
+
 
 /* --- Search Form --- */
 #search {
 	text-align: center; 
 	font-family: 'Oswald', sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	
 }
 #search h2 {
@@ -75,13 +82,14 @@ nav a{
 	font-weight: bold;
 	width: 80%;
 	display: inline-block;
-	background-color: #42474C;
-	border-color: #f7c77c;
-	border-width: 1px;
+	background-color: #5E676E;
+	border-color: #4B5258;
+	border-width: 7px;
+	border-style: solid;
 	border-radius: 4px;
 }
 #item_title:focus {
-	background-color: #555C62;
+	background-color: #677179;
 	outline: none;
 }
 
@@ -100,8 +108,19 @@ nav a{
 .check {content:'\2713';}
 
 #list_to_do li {
-	background-color: #68b6e8;
+	background-color: #5ABBF6;
 	padding: 5px 0 5px 10px;
+	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
+	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
+	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
+}
+
+#list_to_do li:hover {
+		border-left: 6px solid #1670cb;
+		-webkit-transition: border-left 0.2s ease-in-out;
+		-moz-transition: border-left 0.2s ease-in-out;
+		-o-transition: border-left 0.2s ease-in-out;
+		transition: border-left 0.2s ease-in-out;
 }
 #list_to_do li p, #list_to_do li a {
 	display: inline;
@@ -147,15 +166,18 @@ nav a{
 }
 
 #list_done li {
-	background-color: #68b6e8;
+	background-color: #5ABBF6;
 	padding: 5px 0 5px 10px;
+	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
+	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
+	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
 
 }
 #list_done li p, #list_done li a {
 	display: inline;
 }
 #list_done p {
-	color: #DCF4F9;
+	color: #373b3f;
 }
 #list_done a:hover {
 	color: #689ae8;
@@ -187,8 +209,8 @@ nav a{
 #signbtn {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	display: block;
 	width: 125px;
 }
@@ -196,6 +218,20 @@ nav a{
 .inline_form label {
 	float: left;
 	margin-right: 10px;
+}
+
+
+
+/* --- Profile ---*/
+
+.profile_title  {
+	text-align: center;
+}
+
+.profile_title h1 {
+	color: #CEFF85;
+	
+
 }
 
 
