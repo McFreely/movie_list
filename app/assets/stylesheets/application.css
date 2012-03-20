@@ -26,6 +26,8 @@
 
 #logo {
 	margin-bottom: 50px;
+	height: 65px;
+	width: 284px;
 }
 
 nav{
@@ -44,26 +46,6 @@ nav a{
 #pipe {
 	color: #f7c77c;
 }
-
-
-/* --- Home Page --- */
-
-.image_home {
-	border: 5px solid #727B83;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	display: block;
-	width: 128px;
-}
-
-#image_home_front {
-
-
-
-}
-
 
 /* --- Search Form --- */
 #search {
@@ -103,9 +85,6 @@ nav a{
 }
 
 /* --- Movie List --- */
-@font-face { font-family: 'IconicFill'; src: url('assets/iconic_fill.otf') format('opentype'); }
-
-.check {content:'\2713';}
 
 #list_to_do li {
 	background-color: #5ABBF6;
@@ -139,6 +118,7 @@ nav a{
 	padding-top: 4px;
 	color: #2A9ADF;
 	height: 13px;
+	width: 13px;
 	opacity: 0.4;
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
@@ -148,6 +128,8 @@ nav a{
 .watched_button {
 	float: right;
 	margin-right: 10px;
+	height: 18px;
+	width: 22px;
 	font-size: 14px;
 	font-weight: bold;
 	color: #1D84C3;
@@ -182,64 +164,9 @@ nav a{
 #list_done a:hover {
 	color: #689ae8;
 }
-.delete_button_done {
-	float: right;
-	margin-right: 10px;
-	margin-top: 4px;
-	height: 13px;
-	opacity: 0.4;
-	-webkit-transition: opacity 0.2s ease-in-out;
-	-moz-transition: opacity 0.2s ease-in-out;
-	-o-transition: opacity 0.2s ease-in-out;
-	transition: opacity 0.2s ease-in-out;
-}
-.delete_button_done:hover, .delete_button_done:focus {
-	opacity: 1;
-}
-
 
 #list h3 {
 	font-family: 'Oswald', sans-serif;
-}
-
-/* ---  sign up button ---*/
-
-
-
-#signbtn {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	display: block;
-	width: 125px;
-}
-
-.inline_form label {
-	float: left;
-	margin-right: 10px;
-}
-
-
-
-/* --- Profile ---*/
-
-.profile_title  {
-	text-align: center;
-}
-
-.profile_title h1 {
-	color: #CEFF85;
-	
-
-}
-
-
-/* --- About Page --- */
-
-.about_page p {
-	color: #727B83;
-	font-size: 16px;
 }
 
 
