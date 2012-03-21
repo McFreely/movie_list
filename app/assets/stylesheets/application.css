@@ -26,8 +26,7 @@
 
 #logo {
 	margin-bottom: 50px;
-	height: 65px;
-	width: 284px;
+
 }
 
 nav{
@@ -60,34 +59,33 @@ nav a{
 
 #item_title {
 	color: #68b6e8;
+	height: 1.6em;
 	font-size: 24px;
 	font-weight: bold;
 	width: 80%;
 	display: inline-block;
-	background-color: #5E676E;
-	border-color: #4B5258;
-	border-width: 7px;
-	border-style: solid;
-	border-radius: 4px;
+	background-color: #E7EAEE;
+	border-color: #CFD4DD;
+	border-width: 5px;
 }
 #item_title:focus {
-	background-color: #677179;
+	background-color: #F3F4F7;
 	outline: none;
 }
 
 #add_btn {
 	height: 35px;
-	margin-top: -15px;
 	display: inline-block;
 	width: 20%;
 	margin-top: 10px;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 /* --- Movie List --- */
 
+
 #list_to_do li {
-	background-color: #5ABBF6;
+	background-color: #B8E0FF;
 	padding: 5px 0 5px 10px;
 	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
@@ -95,7 +93,7 @@ nav a{
 }
 
 #list_to_do li:hover {
-		border-left: 6px solid #1670cb;
+		border-left: 3px solid #1670cb;
 		-webkit-transition: border-left 0.2s ease-in-out;
 		-moz-transition: border-left 0.2s ease-in-out;
 		-o-transition: border-left 0.2s ease-in-out;
@@ -119,7 +117,7 @@ nav a{
 	color: #2A9ADF;
 	height: 13px;
 	width: 13px;
-	opacity: 0.4;
+	opacity: 0.1;
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-o-transition: opacity 0.2s ease-in-out;
@@ -133,7 +131,7 @@ nav a{
 	font-size: 14px;
 	font-weight: bold;
 	color: #1D84C3;
-	opacity: 0.7;
+	opacity: 0.4;
 	-webkit-transition: opacity 0.2s ease-in-out;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-o-transition: opacity 0.2s ease-in-out;
@@ -148,7 +146,7 @@ nav a{
 }
 
 #list_done li {
-	background-color: #5ABBF6;
+	background-color: #B8E0FF;
 	padding: 5px 0 5px 10px;
 	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
@@ -167,6 +165,56 @@ nav a{
 
 #list h3 {
 	font-family: 'Oswald', sans-serif;
+}
+
+.image_home {
+	border: 5px solid #CFD4DD;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	width: 128px;
+}
+
+/* --- Profile styling ---*/ 
+
+.profile_title {
+	text-align: center;
+}
+
+/* --- error styling ---*/ 
+
+#error_explanation {
+	  padding: 8px 8px 8px 14px;
+	  margin-bottom: 15px;
+	  background-color: #fcf8e3;
+	  border: 1px solid #ECD046;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	  color: #c09853;
+}
+
+#error_explanation h2 {
+	color: #B99D13;
+	font-size: 1.4em;
+}
+
+/* --- Sign in Form styling ---*/ 
+#signbtn {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: block;
+	width: 125px;
+}
+
+
+.inline_form label {
+	float: left;
+	margin-right: 10px;
 }
 
 

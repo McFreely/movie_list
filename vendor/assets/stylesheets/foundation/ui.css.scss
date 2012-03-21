@@ -61,20 +61,22 @@
 	/* Sizes ---------- */
 	.tiny.button			{ font-size: 10px; padding: 6px 14px 8px; width: auto; }
 	.small.button 			{ font-size: 11px; padding: 8px 20px 10px; width: auto; }
-	.large.button 			{ font-size: 18px; padding: 11px 48px 13px; width: auto; }
+	.medium.button 			{ font-size: 18px; padding: 11px 48px 13px; width: auto; }
+	.large.button 			{ font-size: 18px; height: 2em; width: auto; }
 
 	/* Colors ---------- */
 	.blue.button { 
-		background-color: #CEFF85;
+		background-color: #E5FBBB;
 		color: #373b3f;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		   -moz-transition: background-color 0.2s ease-in-out;
-			 -o-transition: background-color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out;
+			   -moz-transition: background-color 0.2s ease-in-out;
+				 -o-transition: background-color 0.2s ease-in-out;
+					transition: background-color 0.2s ease-in-out;
+		margin-bottom: 50px;
 			}
 
 	.green.button	{ 
-		background-color: #CEFF85; 
+		background-color: #E5FBBB; 
 		color: #373b3f;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		   -moz-transition: background-color 0.2s ease-in-out;

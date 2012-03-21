@@ -8,18 +8,22 @@
 ----------------------------------------- */
 
 	form { margin: 0 0 18px; }
-	form label { color: #F075B5; display: block; font-size: 16px; line-height: 18px; font-weight: bold; cursor: pointer; margin-bottom: 2px; }
+	form label { color: #FF85D4; display: block; font-size: 16px; line-height: 18px; font-weight: bold; cursor: pointer; margin-bottom: 4px; }
 	
 	input, textarea { 
 		color: #68b6e8;
-		background-color: #5E676E;
-		border-color: #4B5258;
+		background-color: #E7EAEE;
+		border-color: #CFD4DD;
+		font-size: 16px;
+		line-height: 18px;
+		height: 20px;
 		border-width: 3px;
 		border-style: solid;
-		border-radius: 4px; }
+		border-radius: 4px;
+		margin-bottom: 5px; }
 		
 	input:focus, textarea:focus {
-		background-color: #677179;
+		background-color: #F3F4F7;
 		outline: none;
 	}
 	input.input-text, textarea, select { display: block; margin-bottom: 15px; }
