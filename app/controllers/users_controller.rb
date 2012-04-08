@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
-  
+
   def new
   end
   
-  def show 
+  def show
   end
 end

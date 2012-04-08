@@ -9,6 +9,8 @@ AwesomeList::Application.routes.draw do
     resources :items
   end
   
+  
+  
   match 'profile', :to => 'users#show'
   
   match 'users/:current_user/items/:id/complete' => "items#complete", :as => :complete_item

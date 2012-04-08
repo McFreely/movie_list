@@ -12,8 +12,8 @@ class ItemsController < ApplicationController
     @item.save
       
     respond_to do |format|
-      format.html 
-      format.js
+      format.html { render :partial => "items"}
+      format.js 
     end
   end
   

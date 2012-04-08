@@ -2,10 +2,13 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem 'sqlite3'
-gem 'devise'
+gem 'devise', :git => "http://github.com/plataformatec/devise.git"
+gem 'oauth2'
 gem 'newrelic_rpm'
 gem 'uglifier', '>= 1.0.3'
 gem 'coffee-rails', '~> 3.2.1'
+gem 'omniauth', '>=1.0.0'
+gem 'omniauth-facebook'
 
 group :development do
   gem "rspec-rails"

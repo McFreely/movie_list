@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20120310172722) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
+    t.string   "categorie"
     t.boolean  "completed",  :default => false
     t.integer  "user_id"
     t.datetime "created_at",                    :null => false

@@ -1,5 +1,5 @@
 $('.watched_item').bind('ajax:success', function() {
-	$(this).closest('li').fadeOut();
+	$(this).closest('div.item_details').fadeOut();
 });
 
 $('<%= escape_javascript(render(:partial => 'items/list_done'))%>')

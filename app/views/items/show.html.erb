@@ -1,14 +1,27 @@
 <section class="row">
 	<div id="search" class="eight columns offset-by-two">
-		<h2>Add a movie right now !</h2>
+		<h2>Choose a category :</h2>
+
 		<%= form_for [@user, @item], :remote => true, 
 						:id => "create_item_form" do |form| %>
-		<p>
+		
+			
+			<%= form.radio_button :categorie, :movie, :class => "radio_btn" %>
+			
+			<%= form.radio_button :categorie, :book, :class => "radio_btn" %>
+			
+			<%= form.radio_button :categorie, :tv, :class => "radio_btn" %>
+			
+			<%= form.radio_button :categorie, :music, :class => "radio_btn" %>
+			
+			<%= form.radio_button :categorie, :game, :class => "radio_btn" %>
+			
+		<h2 id="categ_title_add">And add something right now :</h2>
 			<%= form.text_field :title%> 
 			<%= form.submit :Add, 
 				:class => "button green small", 
 				:id => "add_btn" %>
-		</p>
+	
 		<% end %>
 	</div>
 </section>

@@ -1,4 +1,11 @@
 <section class="row">
+	
+	<div class="six columns">
+		<h2>Facebook connect</h2>
+		
+	</div>
+
+<div class="six columns">
 <h2>Registration</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -15,8 +22,8 @@
   <div><%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %></div></br>
 
-  <div><%= f.submit "Register", :class => 'button small radius blue' %></div>
+  <div><%= f.submit "Register", :class => 'button large radius blue' %></div>
 <% end %>
 
-<%= render "links" %>
+	</div>
 </section>

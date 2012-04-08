@@ -1,9 +1,10 @@
 $('<%= escape_javascript(render(:partial => 'item'))%>')
   .replaceAll('#list_to_do');
 
-$('#list_to_do li:first')
+$('#list_to_do div:first')
   .hide()
   .fadeIn()
 
+$('#search a').removeClass('inset');
+$('input#item_title').removeClass('wrapper_blue wrapper_yellow wrapper_red wrapper_purple wrapper_green');
 $('#item_title').val('')
-

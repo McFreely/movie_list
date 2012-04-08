@@ -1,6 +1,7 @@
 <ul id="list_to_do">
 <% current_user.items.incomplete.each do |item| %>
-<li>
+<div class="item_details">
+<li class="<%= item.categorie %> pointer">
 		<p><%= item.title %></p>
 		<% watched = image_tag("watched.png", :alt => "Watched !", 
 									:class => "watched_button")%>
@@ -15,7 +16,28 @@
 
 		<%= link_to delete, item, :method => :delete, 
 								  :remote => true, 
-								  :class => 'delete_item' %>  
+								  :class => 'delete_item' %>
+		  
 </li>
+<div class="details <%= item.categorie %>">
+	<%= image_tag("poster.png", :alt => "poster")%>
+	<h4>Title</h4>
+	<p>Synopsys Synopsys Synopsys</p>
+</div>
+</div>
 <% end %>
+
+<script type="text/javascript">
+	(function () {
+		var details = $('.details');
+		details.hide();
+
+		$('#list_to_do').on('click', 'li', function() {
+			$(this).next().slideToggle( 'fast', function() {
+
+			});
+		});
+	})();
+</script>
+
 </ul>

@@ -66,18 +66,18 @@
 
 	/* Colors ---------- */
 	.blue.button { 
-		background-color: #E5FBBB;
-		color: #373b3f;
-			-webkit-transition: background-color 0.2s ease-in-out;
-			   -moz-transition: background-color 0.2s ease-in-out;
-				 -o-transition: background-color 0.2s ease-in-out;
-					transition: background-color 0.2s ease-in-out;
+		background-color: #373b3f; 
+		color: #d9dde4;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		   -moz-transition: background-color 0.2s ease-in-out;
+			 -o-transition: background-color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out;
 		margin-bottom: 50px;
 			}
 
 	.green.button	{ 
-		background-color: #E5FBBB; 
-		color: #373b3f;
+		background-color: #373b3f; 
+		color: #d9dde4;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		   -moz-transition: background-color 0.2s ease-in-out;
 			 -o-transition: background-color 0.2s ease-in-out;
@@ -85,11 +85,9 @@
 				}
 
 	/* Hovers ---------- */
-	.button:hover, .button:focus { 
-			background-color: #DCF4B8; 
-			color: #373b3f; }
-	.blue.button:hover, .blue.button:focus		{ background-color: #DCF4B8; }
-	.green.button:hover, .green.button:focus	{ background-color: #DCF4B8; }	
+
+	.blue.button:hover, .blue.button:focus		{ background-color: #5F666D; color: #d9dde4;}
+	.green.button:hover, .green.button:focus	{ background-color: #5F666D; color: #d9dde4;}	
 	
 	/* Correct FF button padding */
 	@-moz-document url-prefix("http://") {

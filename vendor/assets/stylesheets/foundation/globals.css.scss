@@ -56,15 +56,16 @@
 		list-style: none;
 	}
 
-	
-	
 	body {
 		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 		font-size: 16px; 
-		line-height: 18px; 
-		background: url(background.png);
+		line-height: 18px;
+		padding-top: 25px; 
+		background: 
+			url(line.png) repeat-x,
+		 	url(background.png);
 		background-color: #d9dde4;
-		color: #f7c77c; 
+		color: #373b3f; 
 		position: relative; 
 		-webkit-font-smoothing: antialiased; }
 	
@@ -73,7 +74,7 @@
 /*	--------------------------------------------------
 	:: Links
 	-------------------------------------------------- */
-	a { color: #F7BA7C; font-weight: bold; text-decoration: none; line-height: inherit; }
+	a { color: #373b3f; font-weight: bold; text-decoration: none; line-height: inherit; }
 	a:hover { color: #f7ae8b; }
 	a:focus { color: #f7ae8b; outline: none; }
 	p a, p a:visited { line-height: inherit; }
@@ -84,7 +85,7 @@
 	-------------------------------------------------- */
 	ul, ol { margin-bottom: 18px; }
 	ul { list-style: none outside; }
-	li { margin-bottom: 12px; }
+	li { margin-top: 10px; }
 
 	
 

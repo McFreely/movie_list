@@ -43,7 +43,7 @@ nav a{
 }
 
 #pipe {
-	color: #f7c77c;
+	color: #373b3f;
 }
 
 /* --- Search Form --- */
@@ -57,20 +57,126 @@ nav a{
 	font-weight: 500;
 }
 
+label#movie_button {
+	width: 64px;
+	height: 64px;
+	padding-left: 64px;
+	padding-bottom: 64px;
+	margin: 5px 10px 15px 5px;
+	background: url(movie_btn.png) no-repeat;
+}
+
+label#book_button {
+	width: 64px;
+	height: 64px;
+	padding-left: 64px;
+	padding-bottom: 64px;
+	margin: 5px 10px 15px 5px;
+	background: url(books_btn.png) no-repeat;
+}
+
+label#tv_button {
+	width: 48px;
+	height: 48px;
+	padding-left: 48px;
+	padding-bottom: 48px;
+	margin: 5px 10px 15px 5px;
+	background: url(tv_btn.png) no-repeat;
+}
+
+label#music_button {
+	width: 64px;
+	height: 64px;
+	padding-left: 64px;
+	padding-bottom: 64px;
+	margin: 5px 10px 15px 5px;
+	background: url(music_btn.png) no-repeat;
+}
+
+label#game_button {
+	width: 64px;
+	height: 64px;
+	padding-left: 64px;
+	padding-bottom: 64px;
+	margin: 5px 10px 15px 5px;
+	background: url(games_btn.png) no-repeat;
+}
+
+
+
+#search label {
+	display: inline;
+
+}
+
+.stylize-common {
+    display: inline;
+ 	width: 48px;
+	height: 48px;
+	padding-left:26px;
+	padding-bottom: 25px;
+    margin: 50px 5px 15px 5px;
+}
+
+.inset {
+	-webkit-box-shadow: inset 0px 1px 6px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 0px 1px 6px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0px 1px 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.stylize-common:first-of-type {
+	background: url(movie_btn.png) no-repeat;
+}
+
+.stylize-common:nth-of-type(2) {
+	background: url(books_btn.png) no-repeat;
+}
+
+.stylize-common:nth-of-type(3) {
+	background: url(tv_btn.png) no-repeat;
+}
+
+.stylize-common:nth-of-type(4) {
+	background: url(music_btn.png) no-repeat;
+}
+
+.stylize-common:last-of-type {
+	background: url(games_btn.png) no-repeat;
+}
+
+#categ_title_add {
+	margin-top: 30px;
+}
+
 #item_title {
-	color: #68b6e8;
+	color: #373b3f;
 	height: 1.6em;
 	font-size: 24px;
 	font-weight: bold;
 	width: 80%;
 	display: inline-block;
 	background-color: #E7EAEE;
-	border-color: #CFD4DD;
-	border-width: 5px;
+	margin-top: 5px;
 }
 #item_title:focus {
 	background-color: #F3F4F7;
 	outline: none;
+}
+
+.wrapper_blue {
+	border: 3px solid #01b7DE;
+}
+.wrapper_yellow {
+	border: 3px solid #FCC32A;
+}
+.wrapper_red {
+	border: 3px solid #EC5B60;
+}
+.wrapper_purple {
+	border: 3px solid #835D84;
+}
+.wrapper_green {
+	border: 3px solid #8cc63f;
 }
 
 #add_btn {
@@ -83,29 +189,38 @@ nav a{
 
 /* --- Movie List --- */
 
+.pointer {
+	cursor: pointer;
+}
+
 
 #list_to_do li {
-	background-color: #B8E0FF;
 	padding: 5px 0 5px 10px;
 	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
 	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
 }
+#list_to_do li.movie{ background-color: #0BB0D5;}
+#list_to_do div.movie  { background-color: #65cee5;}
+#list_to_do li.book{ background-color: #FCCD4A;}
+#list_to_do div.book{ background-color: #FDD872;}
+#list_to_do li.tv { background-color: #EC5B60;}
+#list_to_do div.tv{ background-color: #F07F83;}
+#list_to_do li.music { background-color: #A17CA2;}
+#list_to_do div.music{ background-color: #B294B3;}
+#list_to_do li.game { background-color: #A0D062;}
+#list_to_do div.game{ background-color: #B3D981;}
 
-#list_to_do li:hover {
-		border-left: 3px solid #1670cb;
-		-webkit-transition: border-left 0.2s ease-in-out;
-		-moz-transition: border-left 0.2s ease-in-out;
-		-o-transition: border-left 0.2s ease-in-out;
-		transition: border-left 0.2s ease-in-out;
-}
+
+
 #list_to_do li p, #list_to_do li a {
 	display: inline;
 }
 #list_to_do li p {
 	font-size: 16px;
 	font-weight: bold;
-	color: #373b3f;
+	color: #26292C;
+	
 }
 #list_to_do a:hover {
 	color: #689ae8;
@@ -146,18 +261,24 @@ nav a{
 }
 
 #list_done li {
-	background-color: #B8E0FF;
+	background-color: #01B7DE;
 	padding: 5px 0 5px 10px;
 	-webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.14);
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
 	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
-
 }
+#list_done li.movie { background-color: #0BB0D5;}
+#list_done li.book { background-color: #FCCD4A;}
+#list_done li.tv { background-color: #EC5B60;}
+#list_done li.music { background-color: #A17CA2;}
+#list_done li.game { background-color: #A0D062;}
+
+
 #list_done li p, #list_done li a {
 	display: inline;
 }
 #list_done p {
-	color: #373b3f;
+	color: #26292C;
 }
 #list_done a:hover {
 	color: #689ae8;
@@ -177,6 +298,20 @@ nav a{
 	width: 128px;
 }
 
+.details {
+	width: 440px;
+	height: 100px;
+	margin: auto;
+	padding: 5px;
+	-webkit-box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.details img  {
+	float: left;
+	margin: 5px 10px 5px 10px;
+}
 /* --- Profile styling ---*/ 
 
 .profile_title {
