@@ -222,9 +222,7 @@ label#game_button {
 	color: #26292C;
 	
 }
-#list_to_do a:hover {
-	color: #689ae8;
-}
+
 .delete_button {
 	float: right;
 	margin-right: 20px;
@@ -300,17 +298,28 @@ label#game_button {
 
 .details {
 	width: 440px;
-	height: 100px;
+
 	margin: auto;
 	padding: 5px;
 	-webkit-box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: inset 0px 2px 7px 0px rgba(0, 0, 0, 0.2);
 }
-
 .details img  {
 	float: left;
 	margin: 5px 10px 5px 10px;
+}
+.details_text { font-size: 14px; margin: 5px 5px 0 5px;}
+
+.details_link a{
+	margin: 0 0 5px 5px;
+	-webkit-transition: 0.2s ease-in-out;
+	   -moz-transition: 0.2s ease-in-out;
+		 -o-transition: 0.2s ease-in-out;
+			transition: 0.2s ease-in-out;
+}
+.details_link a:hover, .details_link a:active {
+	color: #5F666D;
 }
 /* --- Profile styling ---*/ 
 

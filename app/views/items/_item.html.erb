@@ -20,9 +20,19 @@
 		  
 </li>
 <div class="details <%= item.categorie %>">
-	<%= image_tag("poster.png", :alt => "poster")%>
-	<h4>Title</h4>
-	<p>Synopsys Synopsys Synopsys</p>
+	<%= image_tag("default_poster.png", :alt => "poster")%>
+	<h5>HH:MM:SS | (YYYY)</h5>
+	<p class="details_text">
+		Nothing to see here for the moment ... 
+		Be patient, young padawan ! Nothing to see here 
+		for the moment ... Be patient, young padawan !
+		Nothing to see here for the moment ... 
+		Be patient, young padawan !
+	</p>
+	
+	<br />
+	<p class="details_link"><%= link_to "Score RT :  XXX %", '#' %>  |
+	<%= link_to "Buy on amazon", '#' %></p>
 </div>
 </div>
 <% end %>
