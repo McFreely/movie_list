@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
     @item.save
       
     respond_to do |format|
-      format.html { render :partial => "items"}
+     format.html { render :partial => "items"}
       format.js 
     end
   end

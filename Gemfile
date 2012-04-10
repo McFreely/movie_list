@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.0.3'
 gem 'coffee-rails', '~> 3.2.1'
 gem 'omniauth', '>=1.0.0'
 gem 'omniauth-facebook'
+gem 'httparty'
 
 group :development do
   gem "rspec-rails"
