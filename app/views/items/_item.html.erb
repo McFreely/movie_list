@@ -21,7 +21,7 @@
 </li>
 <div class="details <%= item.categorie %>">
 	<img src="<%= item.poster %>" alt="" />
-	<h5><%= item.runtime %> min | <%= item.year %> </h5>
+	<h5><%= item.year %> |  <%= item.runtime %></h5>
 	<p class="details_text">
 		<%= item.synopsys %>
 		<br />
@@ -29,8 +29,8 @@
 	</p>
 	
 	<br />
-	<p class="details_link"><a href="<%= item.link%>">Score RT 
-									<%= item.ratings %> %</a> 
+	<p class="details_link"><a href="<%= item.link %>">Score RT 
+									<%= item.ratings %> </a> 
 							|
 							<%= link_to "Buy on amazon", '#' %>
 	</p>
