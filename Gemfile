@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'devise', :git => "http://github.com/plataformatec/devise.git"
 gem 'oauth2'
 gem 'newrelic_rpm'
@@ -14,6 +14,7 @@ gem 'pg'
 
 group :development do
   gem "rspec-rails"
+  gem 'sqlite3'
 end
 
 group :test do
