@@ -43,11 +43,11 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    devise (2.0.4)
+    devise (2.1.2)
       bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.0.3)
+      orm_adapter (~> 0.1)
       railties (~> 3.1)
-      warden (~> 1.1.1)
+      warden (~> 1.2.1)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -81,7 +81,6 @@ GEM
     multi_json (1.3.7)
     multi_xml (0.5.1)
     multipart-post (1.1.5)
-    newrelic_rpm (3.5.2.17)
     nokogiri (1.5.5)
     oauth2 (0.8.0)
       faraday (~> 0.8)
@@ -97,7 +96,7 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
-    orm_adapter (0.0.7)
+    orm_adapter (0.4.0)
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -160,7 +159,7 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
-    warden (1.1.1)
+    warden (1.2.1)
       rack (>= 1.0)
     webrat (0.7.1)
       nokogiri (>= 1.2.0)
@@ -180,7 +179,6 @@ DEPENDENCIES
   devise
   httparty
   jquery-rails
-  newrelic_rpm
   oauth2
   omniauth (>= 1.0.0)
   omniauth-facebook
