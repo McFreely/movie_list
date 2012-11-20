@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 # gem 'sqlite3'
-gem 'devise', :git => "http://github.com/plataformatec/devise.git"
+gem 'devise'
 gem 'oauth2'
 gem 'newrelic_rpm'
 gem 'uglifier', '>= 1.0.3'
@@ -25,7 +25,7 @@ end
 
 group :production do
   #gems specifically for heroku go here
-  gem 'pg'
+  # gem 'pg'
 end
 
 gem "zurb-foundation", :group => :assets
@@ -34,10 +34,7 @@ gem "zurb-foundation", :group => :assets
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  
   gem 'therubyracer'
-
- 
 end
 
 gem 'jquery-rails'
