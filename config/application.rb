@@ -57,7 +57,7 @@ module AwesomeList
     # config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
-    config.assets.enabled = false
+    config.assets.enabled = true
     
     # Enable initialization on precompile 
     # False force the application to not access the DB or load models when 
