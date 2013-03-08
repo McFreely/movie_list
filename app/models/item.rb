@@ -4,11 +4,10 @@ class Item < ActiveRecord::Base
   before_save :rottenize
 
   validates :title, :presence => true, :length => { :maximum => 75}
-  alidates :categorie, :presence => true
+  validates :categorie, :presence => true
 
   scope :completed, where(:completed => true)
   scope :incomplete, where(:completed => false)
-
   default_scope :order => 'items.updated_at DESC'
 
   protected
