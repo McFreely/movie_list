@@ -1,17 +1,19 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: development
+  database: awesome_list_development
+  host: localhost
   pool: 5
-  username:-
+  username:
   password:
 
 test: &TEST
   adapter: postgresql
   encoding: utf8
-  database: test
+  database: awesome_list_test
+  host: localhost
   pool: 5
-  username:-
+  username:
   password:
 
 production:
@@ -19,7 +21,7 @@ production:
   encoding: utf8
   database: production
   pool: 5
-  username:-
+  username:
   password:
 
 cucumber:

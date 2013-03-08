@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-# gem 'sqlite3'
 gem 'devise'
 gem 'oauth2'
-# gem 'newrelic_rpm'
 gem 'uglifier', '>= 1.0.3'
 gem 'coffee-rails', '~> 3.2.1'
 gem 'omniauth', '>=1.0.0'
@@ -14,7 +12,7 @@ gem 'pg'
 
 group :development do
   gem "rspec-rails"
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :test do
