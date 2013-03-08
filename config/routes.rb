@@ -1,27 +1,20 @@
 AwesomeList::Application.routes.draw do
-  authenticated :user do 
+  authenticated :user do
     root :to => 'items#show'
-  end 
-  
+  end
+
   root :to => 'pages#home'
-  
+
   devise_for :users do
     resources :items
   end
-  
-  
-  
+
   match 'profile', :to => 'users#show'
-  
+
   match 'users/:current_user/items/:id/complete' => "items#complete", :as => :complete_item
 
-  match 'contact', :to => 'pages#contact'
+
   match 'about',   :to => 'pages#about'
-  
-  
-  
-  
-  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

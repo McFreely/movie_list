@@ -1,12 +1,11 @@
 <section class="row">
 	<div id="search" class="eight columns offset-by-two">
 		<%= form_for [@user, @item], :remote => true  do |form| %>
-		<h2 id="categ_title_add">Add a movie you have yet to see :</h2>
-			<%= form.text_field :title %> 
-			<%= form.submit :Add, 
-				:class => "button green small", 
+			<h2 id="categ_title_add">Add a movie you have yet to see :</h2>
+			<%= form.text_field :title %>
+			<%= form.submit :Add,
+				:class => "button green small",
 				:id => "add_btn" %>
-
 		<% end %>
 	</div>
 </section>
@@ -14,19 +13,13 @@
 <section id="list" class="row">
 	<div class="six columns" id="list">
 		<h3>Your magnificent list :</h3>
-
-			<%= render @item %>
-
+		<%= render @item %>
 	</div>
 
 	<div class="six columns" id="list">
-
 		<h3>Done !</h3>
 		<%= render 'items/list_done'%>
-
 	</div>
-
-
 </section>
 
 

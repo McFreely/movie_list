@@ -1,41 +1,38 @@
 <ul id="list_to_do">
 <% current_user.items.incomplete.each do |item| %>
-<div class="item_details">
-<li class="movie pointer">
-		<p><%= item.title %></p>
-		<% watched = image_tag("watched.png", :alt => "Watched !", 
-									:class => "watched_button")%>
-		<%= link_to watched, complete_item_path(current_user,
-														item.id),
-										:remote => true,
-										:update => '#list_done', 
-										:class => 'watched_item'%>
+	<div class="item_details">
+		<li class="movie pointer">
+			<p><%= item.title %></p>
+			<% watched = image_tag("watched.png", :alt => "Watched !",
+												  :class => "watched_button")%>
+			<%= link_to watched, complete_item_path(current_user,
+													item.id),
+													:remote => true,
+													:update => '#list_done',
+													:class => 'watched_item'%>
 
-		<% delete = image_tag("delete.png", :alt => "Delete", 
-										:class => "delete_button")%>
+				<% delete = image_tag("delete.png", :alt => "Delete",
+												:class => "delete_button")%>
 
-		<%= link_to delete, item, :method => :delete, 
-								  :remote => true, 
-								  :class => 'delete_item' %>
-		  
-</li>
-<div class="details movie">
-	<img src="<%= item.poster %>" alt="" />
-	<h5><%= item.year %> |  <%= item.runtime %></h5>
-	<p class="details_text">
-		<%= item.synopsys %>
-		<br />
-		
-	</p>
-	
-	<br />
-	<p class="details_link"><a href="<%= item.link %>">Score RT 
-									<%= item.ratings %> </a> 
-							|
-							<%= link_to "Buy on amazon", '#' %>
-	</p>
-</div>
-</div>
+				<%= link_to delete, item, :method => :delete,
+										  :remote => true,
+										  :class => 'delete_item' %>
+		</li>
+		<div class="details movie">
+			<img src="<%= item.poster %>" alt="" />
+			<h5><%= item.year %> |  <%= item.runtime %></h5>
+			<p class="details_text">
+				<%= item.synopsys %>
+				<br />
+			</p>
+			<br />
+			<p class="details_link"><a href="<%= item.link %>">Score RT
+											 <%= item.ratings %> </a>
+									|
+									<%= link_to "Buy on amazon", '#' %>
+			</p>
+		</div>
+	</div>
 <% end %>
 
 <script type="text/javascript">
