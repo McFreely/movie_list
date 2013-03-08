@@ -1,26 +1,26 @@
 <section class="row">
 	<h3>Your brilliant profile</h3>
-</section>	
+</section>
 
 
 <section class="row">
 	<div class="four columns profile_title">
-		<h1><%= current_user.items.incomplete.count %></h1>	
+		<h1><%= current_user.items.incomplete.count %></h1>
 		<h4>Number of movies to watch</h4>
 	</div>
-	
+
 	<div class="four columns profile_title">
-		<h1><%= current_user.items.completed.count %></h1>		
+		<h1><%= current_user.items.completed.count %></h1>
 		<h4>Number of movies watched</h4>
 	</div>
-	
+
 	<div class="four columns profile_title">
-		<h1><%= ((current_user.items.completed.count)*3.3).ceil %></h1>	
+		<h1><%= ((current_user.items.completed.count)*3.3).ceil %></h1>
 		<h4>Points of cool</h4>
 	</div>
 </section>
 
 <section class="row">
-<h5><%= link_to "Edit your profile", edit_user_registration_path, 
-							:class => "button radius tiny blue"  %></h5>
-</section>	
+<h5><%= link_to "Edit your profile", edit_user_registration_path,
+							:class => "button radius tiny purple"  %></h5>
+</section>

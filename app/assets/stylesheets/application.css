@@ -22,7 +22,7 @@
 *2. Sign up button
 *3. Search Form
 *4. Movie Lists
-*5. Footer 
+*5. Footer
 */
 
 
@@ -270,8 +270,12 @@ label#game_button {
 #list_done p {
 	color: #F3F4F7;
 }
+
+#list_done a {
+	color: #F3F4F7;
+}
 #list_done a:hover {
-	color: #689ae8;
+	color: #8DA2E2;
 }
 
 #list h3 {
@@ -358,9 +362,8 @@ label#game_button {
 }
 
 
-/* --- footer styling ---*/ 
+/* --- footer styling ---*/
 footer {
-
   margin-top: 200px;
   padding:0;
 }

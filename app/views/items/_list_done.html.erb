@@ -1,5 +1,5 @@
 <ul id="list_done">
-	<% current_user.items.completed.each do |item| %>
+	<% current_user.items.completed.first(3).each do |item| %>
 		<div class="item_details">
 			<li class="movie">
 				<p><%= item.title %></p>
@@ -13,6 +13,6 @@
 		</div>
 	<% end %>
 	<li class="movie">
-		<%= link_to "See Your Collection", '#' %>
+		<%= link_to "See Your Collection", collection_path %>
 	</li>
 </ul>

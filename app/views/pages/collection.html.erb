@@ -1,0 +1,13 @@
+<section class="row">
+	<h2>Your Magnifiscent Collection</h2>
+</section>
+
+<section class="row">
+	<ul class="block-grid five-up">
+		<% current_user.items.completed.each do |item| %>
+				<li>
+					<img src="<%= item.poster %>" alt="" />
+				</li>
+		<% end %>
+	</ul>
+</section>

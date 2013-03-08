@@ -13,8 +13,8 @@ AwesomeList::Application.routes.draw do
 
   match 'users/:current_user/items/:id/complete' => "items#complete", :as => :complete_item
 
-
-  match 'about',   :to => 'pages#about'
+  match 'about',     :to => 'pages#about'
+  match 'collection', :to => 'pages#collection'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
