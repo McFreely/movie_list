@@ -66,8 +66,8 @@
 
 	/* Colors ---------- */
 	.blue.button { 
-		background-color: #373b3f; 
-		color: #d9dde4;
+		background-color: #6C88DA; 
+		color: #F3F4F7;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		   -moz-transition: background-color 0.2s ease-in-out;
 			 -o-transition: background-color 0.2s ease-in-out;
@@ -86,7 +86,7 @@
 
 	/* Hovers ---------- */
 
-	.blue.button:hover, .blue.button:focus		{ background-color: #5F666D; color: #d9dde4;}
+	.blue.button:hover, .blue.button:focus		{ background-color: #4B6DD2; color: #F3F4F7;}
 	.purple.button:hover, .purple.button:focus	{ background-color: #4B6DD2; color: #F3F4F7;}	
 	
 	/* Correct FF button padding */
