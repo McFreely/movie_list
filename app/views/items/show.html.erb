@@ -1,12 +1,7 @@
 <section class="row">
 	<div id="search" class="eight columns offset-by-two">
-		<h2>Choose a category :</h2>
-
 		<%= form_for [@user, @item], :remote => true  do |form| %>
-
-			
-
-		<h2 id="categ_title_add">And add something right now :</h2>
+		<h2 id="categ_title_add">Add a movie you have yet to see :</h2>
 			<%= form.text_field :title %> 
 			<%= form.submit :Add, 
 				:class => "button green small", 
