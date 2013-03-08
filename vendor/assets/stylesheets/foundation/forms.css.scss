@@ -8,20 +8,18 @@
 ----------------------------------------- */
 
 	form { margin: 0 0 18px; }
-	form label { color: #FF85D4; display: block; font-size: 16px; line-height: 18px; font-weight: bold; cursor: pointer; margin-bottom: 4px; }
-	
-	input, textarea { 
-		color: #68b6e8;
-		background-color: #E7EAEE;
-		border-color: #CFD4DD;
-		font-size: 16px;
-		line-height: 18px;
-		height: 20px;
-		border-width: 3px;
-		border-style: solid;
-		border-radius: 4px;
-		margin-bottom: 5px; }
-		
+	form label { color: #6C88DA; display: block; font-size: 16px; line-height: 18px; font-weight: bold; cursor: pointer; margin-bottom: 4px; }
+
+	input, textarea {
+	  border: 3px solid #6C88DA;
+	  color: #42474C;
+	  padding: 5px 0 6px 10px;
+	  text-indent: 1px;
+	  -webkit-border-radius: 6px;
+	  	 -moz-border-radius: 6px;
+	          border-radius: 6px;
+	   }
+
 	input:focus, textarea:focus {
 		background-color: #F3F4F7;
 		outline: none;

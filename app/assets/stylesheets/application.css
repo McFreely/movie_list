@@ -9,11 +9,15 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require foundation
- *= require_tree .
+ *= require 'foundation/globals'
+ *= require 'foundation/typography'
+ *= require 'foundation/grid'
+ *= require 'foundation/ui'
+ *= require 'foundation/forms'
+ *= require 'foundation/mobile'
 */
 
-/* summary 
+/*
 *1. Header
 *2. Sign up button
 *3. Search Form
@@ -149,7 +153,7 @@ label#game_button {
 }
 
 #item_title {
-	color: #373b3f;
+	color: #42474C;
 	height: 1.6em;
 	font-size: 24px;
 	font-weight: bold;
@@ -201,16 +205,9 @@ label#game_button {
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
 	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
 }
-#list_to_do li.movie{ background-color: #0BB0D5;}
-#list_to_do div.movie  { background-color: #65cee5;}
-#list_to_do li.book{ background-color: #FCCD4A;}
-#list_to_do div.book{ background-color: #FDD872;}
-#list_to_do li.tv { background-color: #EC5B60;}
-#list_to_do div.tv{ background-color: #F07F83;}
-#list_to_do li.music { background-color: #A17CA2;}
-#list_to_do div.music{ background-color: #B294B3;}
-#list_to_do li.game { background-color: #A0D062;}
-#list_to_do div.game{ background-color: #B3D981;}
+#list_to_do li.movie{ background-color: #6C88DA;}
+#list_to_do div.movie  { background-color: #8DA2E2;}
+
 
 
 
@@ -220,8 +217,7 @@ label#game_button {
 #list_to_do li p {
 	font-size: 16px;
 	font-weight: bold;
-	color: #26292C;
-	
+	color: #F3F4F7;
 }
 
 .delete_button {
@@ -266,18 +262,13 @@ label#game_button {
 	-moz-box-shadow:    0px 3px 8px rgba(0, 0, 0, 0.14);
 	box-shadow:         0px 3px 8px rgba(0, 0, 0, 0.14);
 }
-#list_done li.movie { background-color: #0BB0D5;}
-#list_done li.book { background-color: #FCCD4A;}
-#list_done li.tv { background-color: #EC5B60;}
-#list_done li.music { background-color: #A17CA2;}
-#list_done li.game { background-color: #A0D062;}
-
+#list_done li.movie { background-color: #ADBDEB;}
 
 #list_done li p, #list_done li a {
 	display: inline;
 }
 #list_done p {
-	color: #26292C;
+	color: #F3F4F7;
 }
 #list_done a:hover {
 	color: #689ae8;

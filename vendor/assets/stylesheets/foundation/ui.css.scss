@@ -75,9 +75,9 @@
 		margin-bottom: 50px;
 			}
 
-	.green.button	{ 
-		background-color: #373b3f; 
-		color: #d9dde4;
+	.add.button	{ 
+		background-color: #6C88DA; 
+		color: #F3F4F7;
 		-webkit-transition: background-color 0.2s ease-in-out;
 		   -moz-transition: background-color 0.2s ease-in-out;
 			 -o-transition: background-color 0.2s ease-in-out;
@@ -87,7 +87,7 @@
 	/* Hovers ---------- */
 
 	.blue.button:hover, .blue.button:focus		{ background-color: #5F666D; color: #d9dde4;}
-	.green.button:hover, .green.button:focus	{ background-color: #5F666D; color: #d9dde4;}	
+	.add.button:hover, .add.button:focus	{ background-color: #4B6DD2; color: #F3F4F7;}	
 	
 	/* Correct FF button padding */
 	@-moz-document url-prefix("http://") {

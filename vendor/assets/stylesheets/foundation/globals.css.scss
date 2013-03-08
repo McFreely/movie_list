@@ -49,27 +49,24 @@
 	footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
+
 	body {
 		line-height: 1;
-	}
+		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-size: 16px;
+		line-height: 18px;
+		padding-top: 25px;
+		background:
+			// url(line.png) repeat-x,
+		 	url(background.png);
+		background-color: #d9dde4;
+		color: #373b3f;
+		position: relative;
+		-webkit-font-smoothing: antialiased; }
+
 	ol, ul {
 		list-style: none;
 	}
-
-	body {
-		font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		font-size: 16px; 
-		line-height: 18px;
-		padding-top: 25px; 
-		background: 
-			url(line.png) repeat-x,
-		 	url(background.png);
-		background-color: #d9dde4;
-		color: #373b3f; 
-		position: relative; 
-		-webkit-font-smoothing: antialiased; }
-	
-
 
 /*	--------------------------------------------------
 	:: Links
@@ -78,8 +75,8 @@
 	   -moz-transition: color 0.2s ease-in-out;
 		 -o-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;}
-	a:hover { color: #f7ae8b; }
-	a:focus { color: #f7ae8b; outline: none; }
+	a:hover { color: #8DA2E2; }
+	a:focus { color: #8DA2E2; outline: none; }
 	p a, p a:visited { line-height: inherit; }
 	
 
