@@ -6,7 +6,7 @@ class AddAttributesToItems < ActiveRecord::Migration
 
     add_column :items, :ratings, :integer
 
-    add_column :items, :synopsys, :string
+    add_column :items, :synopsys, :text
 
     add_column :items, :poster, :string
 

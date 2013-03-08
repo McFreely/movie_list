@@ -8,17 +8,18 @@ class Item < ActiveRecord::Base
 
   scope :completed, where(:completed => true)
   scope :incomplete, where(:completed => false)
+
   default_scope :order => 'items.updated_at DESC'
 
   protected
     def rottenize  # named after Rotten Tomatoes
       # Request movie search list from RT API and use to complete item attributes
-      if self.categorie === "movie"
+      if self.categorie === "movie" 
         title = self.title #get user query
         unit = "min"
-        options = {:query => {:apikey => :rnbrbgqv7teq8fvkz2ppk857,
-                              :q => title,
-                              :page_limit => 1,
+        options = {:query => {:apikey => :rnbrbgqv7teq8fvkz2ppk857, 
+                              :q => title, 
+                              :page_limit => 1, 
                               :page => 1} }
 
         response = HTTParty.get("http://api.rottentomatoes.com/api/public/v1.0/movies.json", options)
@@ -28,16 +29,19 @@ class Item < ActiveRecord::Base
         # update Item attributes
         self.title = movie['title']
         self.year = movie['year']
-        runtime = movie['runtime']
+        runtime = movie['runtime'] 
         self.runtime = "#{runtime} #{unit}"
         self.synopsys = movie['synopsis']
           if synopsys.empty?
             self.synopsys = "There no resume for the moment, try the RT link below"
           end
+
         self.ratings = movie['ratings']['critics_score']
         self.poster = movie['posters']['profile']
         self.link = movie['links']['alternate']
       end
+
+
     end
 
 end

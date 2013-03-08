@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120410213630) do
+ActiveRecord::Schema.define(:version => 20130308180354) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 20120410213630) do
     t.string   "year"
     t.string   "runtime"
     t.integer  "ratings"
-    t.string   "synopsys"
+    t.text     "synopsys"
     t.string   "poster"
     t.string   "link"
   end
