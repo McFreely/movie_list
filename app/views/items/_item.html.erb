@@ -1,7 +1,7 @@
 <ul id="list_to_do">
 <% current_user.items.incomplete.each do |item| %>
 <div class="item_details">
-<li class="<%= item.categorie %> pointer">
+<li class="movie pointer">
 		<p><%= item.title %></p>
 		<% watched = image_tag("watched.png", :alt => "Watched !", 
 									:class => "watched_button")%>
@@ -19,7 +19,7 @@
 								  :class => 'delete_item' %>
 		  
 </li>
-<div class="details <%= item.categorie %>">
+<div class="details movie">
 	<img src="<%= item.poster %>" alt="" />
 	<h5><%= item.year %> |  <%= item.runtime %></h5>
 	<p class="details_text">

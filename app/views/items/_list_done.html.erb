@@ -1,7 +1,7 @@
 <ul id="list_done">
 	<% current_user.items.completed.each do |item| %>
 	<div class="item_details">
-	<li class="<%= item.categorie %>">
+	<li class="movie">
 		<p><%= item.title %></p>
 		<% delete = image_tag("delete.png", :alt => "Delete", 
 										:class => "delete_button")%>

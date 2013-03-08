@@ -3,24 +3,15 @@
 		<h2>Choose a category :</h2>
 
 		<%= form_for [@user, @item], :remote => true  do |form| %>
-		
+
 			
-			<%= form.radio_button :categorie, :movie %>
-			
-			<%= form.radio_button :categorie, :book %>
-			
-			<%= form.radio_button :categorie, :tv %>
-			
-			<%= form.radio_button :categorie, :music %>
-			
-			<%= form.radio_button :categorie, :game %>
-			
+
 		<h2 id="categ_title_add">And add something right now :</h2>
 			<%= form.text_field :title %> 
 			<%= form.submit :Add, 
 				:class => "button green small", 
 				:id => "add_btn" %>
-	
+
 		<% end %>
 	</div>
 </section>
@@ -28,19 +19,19 @@
 <section id="list" class="row">
 	<div class="six columns" id="list">
 		<h3>Your magnificent list :</h3>
-		
+
 			<%= render @item %>
-		
+
 	</div>
-	
+
 	<div class="six columns" id="list">
-		
+
 		<h3>Done !</h3>
 		<%= render 'items/list_done'%>
-		
+
 	</div>
-	
-	
+
+
 </section>
 
 

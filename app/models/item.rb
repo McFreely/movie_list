@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
   before_save :rottenize
 
   validates :title, :presence => true, :length => { :maximum => 75}
-  validates :categorie, :presence => true
+  # validates :categorie, :presence => true
 
   scope :completed, where(:completed => true)
   scope :incomplete, where(:completed => false)
@@ -14,7 +14,6 @@ class Item < ActiveRecord::Base
   protected
     def rottenize  # named after Rotten Tomatoes
       # Request movie search list from RT API and use to complete item attributes
-      if self.categorie === "movie" 
         title = self.title #get user query
         unit = "min"
         options = {:query => {:apikey => :rnbrbgqv7teq8fvkz2ppk857, 
@@ -39,9 +38,5 @@ class Item < ActiveRecord::Base
         self.ratings = movie['ratings']['critics_score']
         self.poster = movie['posters']['profile']
         self.link = movie['links']['alternate']
-      end
-
-
     end
-
 end
