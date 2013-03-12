@@ -4,5 +4,6 @@ class UsersController < ApplicationController
   end
 
   def show
+  	@title = "Profile"
   end
 end

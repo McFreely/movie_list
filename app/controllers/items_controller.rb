@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
   respond_to :html, :xml, :json
 
   def show
+    @title = "Your List"
     @items = current_user.items.all
     @item = current_user.items.new
   end

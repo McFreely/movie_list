@@ -31,7 +31,7 @@ class Item < ActiveRecord::Base
         self.runtime = "#{runtime} #{unit}"
         self.synopsys = movie['synopsis']
           if synopsys.empty?
-            self.synopsys = "There no resume for the moment, try the RT link below"
+            self.synopsys = "There is no resume for the moment, try the RT link below"
           end
 
         self.ratings = movie['ratings']['critics_score']
