@@ -59,10 +59,11 @@ module AwesomeList
     # Enable the asset pipeline
     config.assets.enabled = true
 
-    # Enable initialization on precompile 
-    # False force the application to not access the DB or load models when 
-    #precompiling the assets
-    #config.assets.initialize_on_precompile = false
+    # Enable initialization on precompile
+    # False force the application to not access the DB or load models when
+    # precompiling the assets
+    # Enabled to fix heroku slug compilation error
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
