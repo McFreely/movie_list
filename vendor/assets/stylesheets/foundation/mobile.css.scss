@@ -4,7 +4,7 @@
 
 	@media handheld, only screen and (max-width: 767px) {
 		h1 { font-size: 32px; font-size: 3.2rem; line-height: 1.3; }
-		h2 { font-size: 28px; font-size: 2.8rem; line-height: 1.3; }
+		h2 { font-size: 28px; font-size: 2.6rem; line-height: 1.3; }
 		h3 { font-size: 21px; font-size: 2.1rem; line-height: 1.3; }
 		h4 { font-size: 18px; font-size: 1.8rem; line-height: 1.2; }
 		h5 { font-size: 16px; font-size: 1.6rem; line-height: 1.2; }
@@ -102,6 +102,11 @@
 		.show-on-phones { display: block !important; }
 		.show-on-tablets { display: none !important; }
 		.show-on-desktops { display: none !important; }
+
+		#logo {
+			margin-bottom:10px;
+		}
+
 	}
 
 
